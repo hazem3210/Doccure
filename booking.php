@@ -1,3 +1,12 @@
+<?php
+session_start();
+ if($_SESSION["type"]==1)
+ {
+	header("location: access-den.php");
+    exit();
+ }
+?>
+
 <!DOCTYPE html> 
 <html lang="en">
 	

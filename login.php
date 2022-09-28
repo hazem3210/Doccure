@@ -13,6 +13,7 @@
 			session_start();
 			ob_start();
 			$_SESSION["user"]=$patient->fetch_assoc()["id"];
+			$_SESSION["type"]=0;
 			header("location: patient-dashboard.php");
 			exit();
 		}

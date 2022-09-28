@@ -12,8 +12,8 @@ $isCorrect=true;
 			{
 				session_start();
 				ob_start();
-
 				$_SESSION["user"]=$patient->fetch_assoc()["id"];
+				$_SESSION["type"]=1;
 				header("location: doctor-dashboard.php");
 				exit();
 			}
