@@ -1,5 +1,4 @@
 <?php
-session_start();
 $isFound=true;
 		if($_SERVER["REQUEST_METHOD"]=="POST")
 		{

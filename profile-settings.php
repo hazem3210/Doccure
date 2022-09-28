@@ -1,5 +1,6 @@
+<?php include("check-sess.php"); ?>
+
 <?php
-session_start();
  if($_SESSION["type"]==1)
  {
 	header("location: access-den.php");
